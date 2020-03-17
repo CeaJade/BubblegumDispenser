@@ -30,25 +30,26 @@ namespace BubblegumDispenser
             Bubblegum = new List<Bubblegum>();
             if (isFull)
             {
+                
                 for (int i = 0; i < numOfGumBlue; i++)
                 {
-                    Bubblegum.Add(new Bubblegum("Blueberry"));
+                    Bubblegum.Add(new Bubblegum("Blueberry"));                   
                 }
                 for (int i = 0; i < numOfGumPurple; i++)
                 {
-                    Bubblegum.Add(new Bubblegum("blackberry"));
+                    Bubblegum.Add(new Bubblegum("Blackberry"));                    
                 }
                 for (int i = 0; i < numOfGumYellow; i++)
                 {
-                    Bubblegum.Add(new Bubblegum("Tutti-Frutti"));
+                    Bubblegum.Add(new Bubblegum("Tutti-Frutti"));                 
                 }
                 for (int i = 0; i < numOfGumOrange; i++)
                 {
-                    Bubblegum.Add(new Bubblegum("Orange"));
+                    Bubblegum.Add(new Bubblegum("Orange"));                
                 }
                 for (int i = 0; i < numOfGumRed; i++)
                 {
-                    Bubblegum.Add(new Bubblegum("Strawberry"));
+                    Bubblegum.Add(new Bubblegum("Strawberry"));                
                 }
                 for (int i = 0; i < numOfGumGreen; i++)
                 {
@@ -56,5 +57,20 @@ namespace BubblegumDispenser
                 }
             }
         }
+
+
+        public int CountByType(string type)
+        {
+            int count = 0;
+            for (int i = 0; i < Bubblegum.Count(); i++)
+            {
+                if (Bubblegum[i].Type == type)
+                {
+                    count++;
+                }
+            }
+            return count;
+        }
+
     }
 }

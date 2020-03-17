@@ -11,13 +11,18 @@ namespace BubblegumDispenser
         private Bubblegum dispenseGum;
         private GumContainer gumContainer;
 
+        public GumContainer GumContainer
+        {
+            get { return gumContainer; }
+            set { gumContainer = value; }
+        }
+
         public Dispenser(GumContainer container)
         {
             this.gumContainer = container;
         }
 
-        public GumContainer GumContainer { get => gumContainer; set => gumContainer = value; }
-
+        
         public Bubblegum DispenseGum()
         {
             Random dispence = new Random();

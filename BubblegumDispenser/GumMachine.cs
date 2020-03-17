@@ -32,7 +32,7 @@ namespace BubblegumDispenser
 
         public GumMachine(bool isFull, bool handleTurned)
         {
-            this.container = new GumContainer(isFull, 14, 7, 11, 10, 8, 5);
+            this.container = new GumContainer(isFull, 1, 1, 1, 1, 1, 1);
             this.dispencer = new Dispenser(this.Container);
             this.handle = new Handle(handleTurned);
         }
