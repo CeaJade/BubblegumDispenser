@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+//Hvor er dine kodekommentar?
 namespace BubblegumDispenser
 {
     class Dispenser
@@ -14,6 +15,7 @@ namespace BubblegumDispenser
         public GumContainer GumContainer
         {
             get { return gumContainer; }
+            //Skal denne være public?
             set { gumContainer = value; }
         }
 
@@ -23,6 +25,8 @@ namespace BubblegumDispenser
         }
 
         
+        //Flot at du får tyggegummiet ud af maskinen
+        //Og at du indkapsler tyggegummiet
         public Bubblegum DispenseGum()
         {
             Random dispence = new Random();
